@@ -1,22 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaReact, FaMobileAlt, FaCamera, FaDatabase } from 'react-icons/fa';
-import { SiDjango, SiLaravel, SiRubyonrails, SiFlutter, SiOpencv } from 'react-icons/si';
-import { useLanguage } from '../context/LanguageContext';
 
-const skills = [
-    { name: 'React JS', icon: <FaReact size={40} color="#61DAFB" /> },
-    { name: 'React Native', icon: <FaMobileAlt size={40} color="#61DAFB" /> },
-    { name: 'Flutter', icon: <SiFlutter size={40} color="#02569B" /> },
-    { name: 'Laravel', icon: <SiLaravel size={40} color="#FF2D20" /> },
-    { name: 'Django', icon: <SiDjango size={40} color="#092E20" /> },
-    { name: 'Ruby on Rails', icon: <SiRubyonrails size={40} color="#CC0000" /> },
-    { name: 'Computer Vision', icon: <FaCamera size={40} color="#5C5C5C" /> },
-    { name: 'OpenCV', icon: <SiOpencv size={40} color="#5C3EE8" /> },
-];
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../translations';
 
 const Skills = () => {
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
+    const categories = translations[language].skills.categories || [];
 
     return (
         <section id="skills" className="section-padding" style={{ backgroundColor: 'var(--bg-secondary)' }}>
@@ -40,34 +30,56 @@ const Skills = () => {
                     </p>
                 </motion.div>
 
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
-                    gap: '2rem',
-                    justifyContent: 'center'
-                }}>
-                    {skills.map((skill, index) => (
-                        <motion.div
-                            key={skill.name}
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.3, delay: index * 0.05 }}
-                            whileHover={{ y: -5, backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
-                            viewport={{ once: true }}
-                            className="glass-panel"
-                            style={{
-                                padding: '2rem',
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+                    {categories.map((category, index) => (
+                        <div key={index}>
+                            <motion.h3
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                transition={{ delay: index * 0.1 }}
+                                viewport={{ once: true }}
+                                style={{
+                                    fontSize: '1.5rem',
+                                    fontWeight: '700',
+                                    marginBottom: '1.5rem',
+                                    color: 'var(--accent-primary)',
+                                    borderLeft: '4px solid var(--accent-primary)',
+                                    paddingLeft: '1rem'
+                                }}
+                            >
+                                {category.name}
+                            </motion.h3>
+
+                            <div style={{
                                 display: 'flex',
-                                flexDirection: 'column',
-                                alignItems: 'center',
-                                gap: '1rem',
-                                cursor: 'pointer',
-                                textAlign: 'center'
-                            }}
-                        >
-                            {skill.icon}
-                            <span style={{ fontWeight: '600' }}>{skill.name}</span>
-                        </motion.div>
+                                flexWrap: 'wrap',
+                                gap: '1rem'
+                            }}>
+                                {category.items.map((item, i) => (
+                                    <motion.div
+                                        key={i}
+                                        initial={{ opacity: 0, scale: 0.9 }}
+                                        whileInView={{ opacity: 1, scale: 1 }}
+                                        transition={{ delay: i * 0.05 }}
+                                        whileHover={{ y: -3, backgroundColor: 'var(--glass-border)' }}
+                                        viewport={{ once: true }}
+                                        className="glass-panel"
+                                        style={{
+                                            padding: '0.8rem 1.5rem',
+                                            borderRadius: '50px',
+                                            fontSize: '0.95rem',
+                                            fontWeight: '600',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: '0.5rem',
+                                            border: '1px solid rgba(255,255,255,0.05)'
+                                        }}
+                                    >
+                                        {item}
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </div>
                     ))}
                 </div>
             </div>

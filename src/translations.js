@@ -27,6 +27,28 @@ export const translations = {
         skills: {
             title: 'Compétences Techniques',
             subtitle: "Expertise en développement Full Stack Web, Mobile et Vision par Ordinateur.",
+            categories: [
+                {
+                    name: "Langages de programmation",
+                    items: ["PHP", "Javascript", "HTML", "CSS", "Ruby", "Python", "Dart", "C", "JAVA"]
+                },
+                {
+                    name: "Frameworks",
+                    items: ["Laravel", "React JS", "Typescript", "Django", "Rails", "Flutter", "React Native", "Bootstrap", "Tailwind CSS"]
+                },
+                {
+                    name: "Bases de données",
+                    items: ["PostgreSQL", "MySQL", "SQLite", "MongoDB", "Firebase"]
+                },
+                {
+                    name: "Outils",
+                    items: ["Git", "GitHub", "CI/CD", "Trello", "Jira", "Docker"]
+                },
+                {
+                    name: "Processus",
+                    items: ["Méthodologie Agile", "Gestion de projet", "Revue de code", "Résolution de problèmes", "Rétrospectives"]
+                }
+            ]
         },
         projects: {
             title: 'Projets Réalisés',
@@ -37,40 +59,47 @@ export const translations = {
                     title: 'Kenaya Impact Cvthèque',
                     description: "Cvthèque pour l'ONG Kenaya Impact. Gestion complète des membres et recrutements.",
                     tags: ['Laravel', 'PHP', 'Vite'],
-                    link: 'https://kenaya-impact.yulcom.net/'
+                    link: 'https://kenaya-impact.yulcom.net/',
+                    github: 'https://github.com/Passing01'
                 },
                 {
                     title: 'NASA Bioscience Platform',
                     description: 'Plateforme de synthèse de données BIOSCIENCE de la NASA. Collaboration internationale (Pakistan, Mexique, USA).',
                     tags: ['Laravel', 'React JS', 'NASA API'],
-                    link: 'https://nasa-bioscience.onrender.com/'
+                    link: 'https://nasa-bioscience.onrender.com/',
+                    github: 'https://github.com/Passing01'
                 },
                 {
                     title: 'Health AI Agent',
                     description: "Agent IA sanitaire (Hackathon IBM WATSON ORCHESTRATE).",
                     tags: ['TypeScript', 'React JS', 'IBM Watson'],
-                    link: 'https://ibm-agentic-hackathon-challenge-yhd.vercel.app/#get-started'
+                    link: 'https://ibm-agentic-hackathon-challenge-yhd.vercel.app/#get-started',
+                    github: 'https://github.com/Passing01'
                 },
                 {
                     title: 'SN-BRAFASO',
                     description: 'Site institutionnel avec backoffice complet pour l\'entreprise SN-BRAFASO.',
-                    tags: ['Laravel', 'Backoffice']
+                    tags: ['Laravel', 'Backoffice'],
+                    github: 'https://github.com/Passing01'
                 },
                 {
                     title: 'BTP Mobile App',
                     description: 'Application mobile de gestion pour le secteur du BTP (En cours de conception).',
-                    tags: ['Flutter', 'Mobile']
+                    tags: ['Flutter', 'Mobile'],
+                    github: 'https://github.com/Passing01'
                 },
                 {
                     title: 'BIPIA International',
                     description: 'Site institutionnel pour l\'entreprise BIPIA INTERNATIONAL.',
                     tags: ['Laravel'],
-                    link: 'https://bipia-international.com'
+                    link: 'https://bipia-international.com',
+                    github: 'https://github.com/Passing01'
                 },
                 {
                     title: 'Auction Platform',
                     description: 'Plateforme de vente aux enchères en ligne.',
-                    tags: ['Ruby on Rails']
+                    tags: ['Ruby on Rails'],
+                    github: 'https://github.com/Passing01'
                 }
             ]
         },
@@ -129,49 +158,44 @@ export const translations = {
             hobbies_title: "Centres d'intérêt",
             exp_items: [
                 {
-                    role: "Développeur Full Stack",
-                    company: "Freelance",
-                    period: "En cours",
-                    description: "Conception et développement d'applications web et mobiles sur mesure.",
+                    role: "Développeur Web Full Stack",
+                    company: "YULCOM Technologie (Ouagadougou/Burkina Faso)",
+                    period: "Depuis 2025",
+                    description: "Conception et développement d'applications web robustes.",
                     achievements: [
-                        "Développement d'une application mobile pour le secteur BTP (Flutter).",
-                        "Création de sites institutionnels avec Backoffice pour SN-BRAFASO et BIPIA International (Laravel)."
+                        "Conception et développement d'applications web robustes en utilisant HTML, CSS, Javascript, PHP, Laravel.",
+                        "Utilisation des bases de données MySQL, SQLite, PostgreSQL.",
+                        "Création d'applications Back-Office pour des entreprises.",
+                        "Collaboration avec les équipes de design et de produit pour améliorer l'expérience utilisateur.",
+                        "Optimisation des performances et mise en œuvre de l'intégration continue.",
+                        "Développement et maintenance d'APIs RESTful pour la fluidité des données.",
+                        "Participation aux tests et débogage pour garantir la qualité."
                     ]
                 },
                 {
-                    title: 'Consultant ETP4A',
-                    role: "Consultant / Formateur",
-                    company: "ETP4A",
-                    period: "2023",
-                    description: "Collaboration et formation technique.",
-                    achievements: []
-                },
-                {
-                    role: "Développeur & Collaborateur Technique",
-                    company: "NASA Bioscience (Collaboration)",
-                    period: "Projet Récent",
-                    description: "Participation au développement d'une plateforme de bioscience.",
+                    role: "Développeur Web Full-Stack",
+                    company: "ETP4AFRICA (Sénégal)",
+                    period: "2024 - 2025",
+                    description: "Développement et maintenance d'applications web dynamiques.",
                     achievements: [
-                        "Synthèse et visualisation de données NASA.",
-                        "Collaboration avec des ingénieurs du Pakistan, Mexique et USA."
+                        "Technologies : JavaScript, Ruby on Rails, Node.js, MongoDB.",
+                        "Collaboration avec les équipes design/produit pour des solutions user-centric.",
+                        "Optimisation des performances web et bonnes pratiques.",
+                        "Gestion de bases de données et serveurs (sécurité/intégrité)."
                     ]
                 },
                 {
-                    role: "Développeur Web",
-                    company: "ONG Kenaya Impact",
-                    period: "Mission",
-                    description: "Mise en place d'une Cvthèque numérique.",
+                    role: "Développement Web",
+                    company: "Bakeli Network (Sénégal)",
+                    period: "2025 - 2025", // Keeping user's date, though overlapping slightly odd if ETP ends 2025 too.
+                    description: "Conception et développement de sites web responsives.",
                     achievements: [
-                        "Gestion des membres et recrutements.",
-                        "Stack: Laravel, PHP, Vite."
+                        "Stack : HTML, CSS, JavaScript, PHP, Python (Django).",
+                        "Création d'interfaces utilisateur attrayantes avec l'équipe design.",
+                        "Intégration d'API pour fonctionnalités dynamiques.",
+                        "Tests et optimisation des performances pour une expérience fluide.",
+                        "Documentation des processus et suivi de projets."
                     ]
-                }
-            ],
-            edu_items: [
-                {
-                    degree: "Informatique / Développement Logiciel",
-                    school: "Université / École", // Placeholder
-                    year: "202x - 202x"
                 }
             ],
             langs: ["Français (Natif)", "Anglais (Professionnel)"],
@@ -224,6 +248,28 @@ export const translations = {
         skills: {
             title: 'Technical Skills',
             subtitle: "Expertise in Full Stack Web, Mobile development, and Computer Vision.",
+            categories: [
+                {
+                    name: "Programming Languages",
+                    items: ["PHP", "Javascript", "HTML", "CSS", "Ruby", "Python", "Dart", "C", "JAVA"]
+                },
+                {
+                    name: "Frameworks",
+                    items: ["Laravel", "React JS", "Typescript", "Django", "Rails", "Flutter", "React Native", "Bootstrap", "Tailwind CSS"]
+                },
+                {
+                    name: "Databases",
+                    items: ["PostgreSQL", "MySQL", "SQLite", "MongoDB", "Firebase"]
+                },
+                {
+                    name: "Tools",
+                    items: ["Git", "GitHub", "CI/CD", "Trello", "Jira", "Docker"]
+                },
+                {
+                    name: "Processes",
+                    items: ["Agile Methodology", "Project Management", "Code Review", "Problem Solving", "Retrospectives"]
+                }
+            ]
         },
         projects: {
             title: 'Completed Projects',
@@ -234,40 +280,47 @@ export const translations = {
                     title: 'Kenaya Impact CV Database',
                     description: "CV Database for NGO Kenaya Impact. Complete member and recruitment management.",
                     tags: ['Laravel', 'PHP', 'Vite'],
-                    link: 'https://kenaya-impact.yulcom.net/'
+                    link: 'https://kenaya-impact.yulcom.net/',
+                    github: 'https://github.com/Passing01'
                 },
                 {
                     title: 'NASA Bioscience Platform',
                     description: 'NASA BIOSCIENCE data synthesis platform. International collaboration (Pakistan, Mexico, USA).',
                     tags: ['Laravel', 'React JS', 'NASA API'],
-                    link: 'https://nasa-bioscience.onrender.com/'
+                    link: 'https://nasa-bioscience.onrender.com/',
+                    github: 'https://github.com/Passing01'
                 },
                 {
                     title: 'Health AI Agent',
                     description: "Health AI Agent (IBM WATSON ORCHESTRATE Hackathon).",
                     tags: ['TypeScript', 'React JS', 'IBM Watson'],
-                    link: 'https://ibm-agentic-hackathon-challenge-yhd.vercel.app/#get-started'
+                    link: 'https://ibm-agentic-hackathon-challenge-yhd.vercel.app/#get-started',
+                    github: 'https://github.com/Passing01'
                 },
                 {
                     title: 'SN-BRAFASO',
                     description: 'Institutional website with complete backoffice for SN-BRAFASO.',
-                    tags: ['Laravel', 'Backoffice']
+                    tags: ['Laravel', 'Backoffice'],
+                    github: 'https://github.com/Passing01'
                 },
                 {
                     title: 'BTP Mobile App',
                     description: 'Construction management mobile app (Work in Progress).',
-                    tags: ['Flutter', 'Mobile']
+                    tags: ['Flutter', 'Mobile'],
+                    github: 'https://github.com/Passing01'
                 },
                 {
                     title: 'BIPIA International',
                     description: 'Institutional website for BIPIA INTERNATIONAL.',
                     tags: ['Laravel'],
-                    link: 'https://bipia-international.com'
+                    link: 'https://bipia-international.com',
+                    github: 'https://github.com/Passing01'
                 },
                 {
                     title: 'Auction Platform',
                     description: 'Online auction platform.',
-                    tags: ['Ruby on Rails']
+                    tags: ['Ruby on Rails'],
+                    github: 'https://github.com/Passing01'
                 }
             ]
         },
@@ -340,41 +393,43 @@ export const translations = {
             hobbies_title: "Hobbies",
             exp_items: [
                 {
-                    role: "Full Stack Developer",
-                    company: "Freelance / Client Projects",
-                    period: "Ongoing",
-                    description: "Design and development of custom web and mobile applications.",
+                    role: "Full Stack Web Developer",
+                    company: "YULCOM Technologie (Ouagadougou/Burkina Faso)",
+                    period: "Since 2025",
+                    description: "Design and development of robust web applications.",
                     achievements: [
-                        "Developing a mobile app for the construction (BTP) sector (Flutter).",
-                        "Created institutional websites with Backoffice for SN-BRAFASO and BIPIA International (Laravel)."
+                        "Design and development using HTML, CSS, Javascript, PHP, Laravel.",
+                        "Database management: MySQL, SQLite, PostgreSQL.",
+                        "Creation of Back-Office applications for companies.",
+                        "Collaboration with design/product teams for UX improvement.",
+                        "Performance optimization and CI/CD implementation.",
+                        "RESTful API development and maintenance.",
+                        "Testing and debugging to ensure quality."
                     ]
                 },
                 {
-                    title: 'Consultant ETP4A',
-                    role: "Consultant / Trainer",
-                    company: "ETP4A",
-                    period: "2023",
-                    description: "Technical collaboration and training.",
-                    achievements: []
-                },
-                {
-                    role: "Developer & Technical Collaborator",
-                    company: "International Collaboration (NASA Bioscience)",
-                    period: "Recent Project",
-                    description: "Participated in the development of a bioscience platform.",
+                    role: "Full Stack Web Developer",
+                    company: "ETP4AFRICA (Senegal)",
+                    period: "2024 - 2025",
+                    description: "Development and maintenance of dynamic web apps.",
                     achievements: [
-                        "Synthesis and visualization of NASA data.",
-                        "Collaboration with engineers from Pakistan, Mexico, and USA."
+                        "Technologies: JavaScript, Ruby on Rails, Node.js, MongoDB.",
+                        "Collaboration for user-centric solutions.",
+                        "Web performance optimization and best practices.",
+                        "Database and server management (security/integrity)."
                     ]
                 },
                 {
-                    role: "Web Developer",
-                    company: "NGO Kenaya Impact",
-                    period: "Mission",
-                    description: "Implementation of a digital CV database.",
+                    role: "Web Development",
+                    company: "Bakeli Network (Senegal)",
+                    period: "2025 - 2025",
+                    description: "Design and development of responsive websites.",
                     achievements: [
-                        "Member and recruitment management.",
-                        "Stack: Laravel, PHP, Vite."
+                        "Stack: HTML, CSS, JavaScript, PHP, Python (Django).",
+                        "UI creation with design team.",
+                        "API integration for dynamic features.",
+                        "Performance testing and optimization.",
+                        "Process documentation and project tracking."
                     ]
                 }
             ],

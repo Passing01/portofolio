@@ -78,15 +78,22 @@ const Projects = () => {
                                     ))}
                                 </div>
 
-                                <div style={{ display: 'flex', gap: '1rem' }}>
+                                <div style={{ display: 'flex', gap: '1rem', marginTop: 'auto' }}>
                                     {project.link ? (
-                                        <a href={project.link} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem', color: 'var(--accent-primary)' }}>
+                                        <a href={project.link} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem', color: 'var(--accent-primary)', textDecoration: 'none', fontWeight: 'bold' }}>
                                             <FaExternalLinkAlt /> {t('projects.demo')}
                                         </a>
                                     ) : (
-                                        <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.9rem', opacity: 0.5, cursor: 'not-allowed' }}>
+                                        <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem', opacity: 0.5, cursor: 'not-allowed' }}>
                                             <FaExternalLinkAlt /> {t('projects.demo')}
                                         </span>
+                                    )}
+
+                                    {/* GitHub Link */}
+                                    {project.github && (
+                                        <a href={project.github} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem', color: 'var(--text-primary)', textDecoration: 'none', opacity: 0.8, transition: 'opacity 0.2s' }} className="github-link">
+                                            <FaGithub /> {t('projects.code')}
+                                        </a>
                                     )}
                                 </div>
                             </div>

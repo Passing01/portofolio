@@ -47,6 +47,7 @@ const Navbar = () => {
         { title: t('nav.home'), href: '#home' },
         { title: t('nav.about'), href: '#about' },
         { title: t('nav.skills'), href: '#skills' },
+        { title: language === 'fr' ? 'Expérience' : 'Experience', href: '#experience' },
         { title: t('nav.projects'), href: '#projects' },
         { title: t('nav.certificates'), href: '#certificates' }, // Added
         { title: t('nav.resume'), href: '/cv' },
@@ -77,9 +78,9 @@ const Navbar = () => {
                 maxWidth: '1200px',
                 margin: '0 auto'
             }}>
-                <Link to="/" style={{ fontSize: '1.5rem', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <Link to="/" style={{ fontSize: '1.5rem', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '0.5rem', marginRight: '2rem' }}>
                     <FaCode color="var(--accent-primary)" />
-                    <span className="gradient-text">DevPortfolio</span>
+                    <span className="gradient-text">DevRahim</span>
                 </Link>
 
                 {/* Desktop Menu */}
