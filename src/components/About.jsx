@@ -48,7 +48,7 @@ const About = () => {
                         border: '2px solid var(--glass-border)'
                     }}>
                         <img
-                            src="https://placehold.co/400x400/1a1a1a/FFF?text=Votre+Photo"
+                            src="/IMG.png"
                             alt="Photo de profil"
                             style={{
                                 width: '100%',
