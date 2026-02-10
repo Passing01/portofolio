@@ -109,12 +109,74 @@ export const translations = {
             view_all: 'Voir tous les certificats',
             items: [
                 {
+                    title: 'Développeur Full Stack (Niveau Intermédiaire)',
+                    issuer: 'ETP4A',
+                    date: '2025',
+                    description: 'Certification de développeur Full Stack niveau intermédiaire.',
+                    pdf: '/Certificat_ETP4A_Abdoul Rahim.pdf'
+                },
+                {
+                    title: 'Développement Mobile (Niveau Débutant)',
+                    issuer: 'Declic',
+                    date: 'Octobre 2025',
+                    description: 'Certificat de formation en développement mobile.',
+                    image: '/_Badge_Développement_Mobile_(Niveau_débutant_-_Octobre_2025).png'
+                },
+                {
+                    title: 'Développeur Django',
+                    issuer: 'Bakeli Network',
+                    date: '2025',
+                    description: 'Certification de développeur backend avec le framework Django.',
+                    pdf: '/certificat.pdf'
+                },
+                {
+                    title: 'Sécurité des Réseaux',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: 'Sécurisation des infrastructures réseaux.',
+                    pdf: '/Coursera Securite Reseaux Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: 'Risques de Sécurité',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: 'Analyse et gestion des risques informatiques.',
+                    pdf: '/Coursera Risques de securite Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: 'Fondements de la Cybersécurité',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: 'Concepts de base et enjeux de la cybersécurité.',
+                    pdf: '/Coursera Fondement Cybersecurite Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: 'Introduction au Développement Mobile',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: 'Principes fondamentaux du développement mobile.',
+                    pdf: '/Coursera Introduction au Dev Mobile Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: 'Introduction au Développement de Jeux Vidéo',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: "Bases de la création de jeux vidéo.",
+                    pdf: '/Coursera Introduction au Jeux Video Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: "Semaine de l'Intelligence Artificielle (SEINAR)",
+                    issuer: 'SEINAR',
+                    date: '2025',
+                    description: "Certificat de participation à la semaine de l'IA.",
+                    pdf: '/Rahim Ouedraogo_Certificat.pdf'
+                },
+                {
                     title: 'Agentic AI Challenge',
                     issuer: 'IBM Watson Orchestrate',
                     date: '2024',
                     description: 'Hackathon IBM - Intelligence Artificielle Agentique.',
-                    image: '/ibm-watson-certificate.png',
-                    pdf: '/Rahim Ouedraogo_Certificat.pdf'
+                    image: '/ibm-watson-certificate.png'
                 },
                 {
                     title: 'NASA Space Apps Challenge',
@@ -330,6 +392,69 @@ export const translations = {
             view_all: 'View All Certificates',
             items: [
                 {
+                    title: 'Full Stack Developer (Intermediate Level)',
+                    issuer: 'ETP4A',
+                    date: '2025',
+                    description: 'Intermediate level Full Stack developer certification.',
+                    pdf: '/Certificat_ETP4A_Abdoul Rahim.pdf'
+                },
+                {
+                    title: 'Mobile Development (Beginner Level)',
+                    issuer: 'Declic',
+                    date: 'October 2025',
+                    description: 'Mobile development training certificate.',
+                    image: '/_Badge_Développement_Mobile_(Niveau_débutant_-_Octobre_2025).png'
+                },
+                {
+                    title: 'Django Developer',
+                    issuer: 'Bakeli Network',
+                    date: '2025',
+                    description: 'Backend developer certification with Django framework.',
+                    pdf: '/certificat.pdf'
+                },
+                {
+                    title: 'Network Security',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: 'Securing network infrastructures.',
+                    pdf: '/Coursera Securite Reseaux Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: 'Security Risks',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: 'Analysis and management of IT risks.',
+                    pdf: '/Coursera Risques de securite Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: 'Cybersecurity Foundations',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: 'Basic concepts and challenges of cybersecurity.',
+                    pdf: '/Coursera Fondement Cybersecurite Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: 'Introduction to Mobile Development',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: 'Fundamental principles of mobile development.',
+                    pdf: '/Coursera Introduction au Dev Mobile Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: 'Introduction to Video Game Development',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: "Basics of video game creation.",
+                    pdf: '/Coursera Introduction au Jeux Video Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: "Artificial Intelligence Week (SEINAR)",
+                    issuer: 'SEINAR',
+                    date: '2025',
+                    description: "Participation certificate for the AI week.",
+                    pdf: '/Rahim Ouedraogo_Certificat.pdf'
+                },
+                {
                     title: 'IBM Watson Orchestrate',
                     issuer: 'IBM',
                     date: '2024',
@@ -338,7 +463,7 @@ export const translations = {
                 },
                 {
                     title: 'Full Stack Development',
-                    issuer: 'ETP4A', // Placeholder
+                    issuer: 'ETP4A',
                     date: '2023',
                     description: 'Professional Certificate',
                     image: '/meta_certificate.jpg'
@@ -348,8 +473,7 @@ export const translations = {
                     issuer: 'IBM Watson Orchestrate',
                     date: '2024',
                     description: 'IBM Hackathon - Agentic Artificial Intelligence.',
-                    image: '/ibm-watson-certificate.png',
-                    pdf: '/Rahim Ouedraogo_Certificat.pdf'
+                    image: '/ibm-watson-certificate.png'
                 },
                 {
                     title: 'NASA Space Apps Challenge',
