@@ -275,6 +275,8 @@ export const translations = {
                 message: 'Message',
                 message_placeholder: 'Votre message',
                 send: 'Envoyer',
+                success: 'Message envoyé avec succès !',
+                error: 'Une erreur est survenue, veuillez réessayer.',
             }
         },
         footer: {
@@ -592,6 +594,8 @@ export const translations = {
                 message: 'Message',
                 message_placeholder: 'Your message',
                 send: 'Send',
+                success: 'Message sent successfully!',
+                error: 'An error occurred, please try again.',
             }
         },
         footer: {
