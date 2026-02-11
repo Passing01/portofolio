@@ -62,12 +62,12 @@ const ResumePage = () => {
                             </h2>
                         </div>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}><FaEnvelope /> contact@monsite.com</div>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}><FaMapMarkerAlt /> Paris, France</div>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}><FaGlobe /> www.portfolio.com</div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}><FaEnvelope /> ouerahim456@gmail.com</div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}><FaMapMarkerAlt /> Ouagadougou, Burkina Faso</div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}><FaGlobe /> https://portofolio-gold-mu.vercel.app/</div>
                             <div style={{ display: 'flex', gap: '1rem', marginTop: '0.5rem', fontSize: '1.2rem' }}>
-                                <FaLinkedin style={{ cursor: 'pointer', color: 'var(--text-primary)' }} />
-                                <FaGithub style={{ cursor: 'pointer', color: 'var(--text-primary)' }} />
+                                <FaLinkedin style={{ cursor: 'pointer', color: 'var(--text-primary)' }} href="https://www.linkedin.com/in/rahim-ouedraogo-a32a152b9/" />
+                                <FaGithub style={{ cursor: 'pointer', color: 'var(--text-primary)' }} href="https://github.com/Passing01" />
                             </div>
                         </div>
                     </div>

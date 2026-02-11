@@ -280,6 +280,19 @@ export const translations = {
         footer: {
             made_with: 'Fait avec',
             rights: 'Tous droits réservés.',
+        },
+        resume: {
+            title: 'Mon CV',
+            subtitle: 'Mon parcours professionnel.',
+            download: 'Télécharger PDF',
+            sections: {
+                summary: 'Résumé',
+                experience: 'Expérience',
+                education: 'Education',
+                skills: 'Compétences',
+                projects: 'Projets',
+                certificates: 'Certificats'
+            }
         }
     },
     en: {
@@ -394,7 +407,7 @@ export const translations = {
                 {
                     title: 'Full Stack Developer (Intermediate Level)',
                     issuer: 'ETP4A',
-                    date: '2025',
+                    date: '2024',
                     description: 'Intermediate level Full Stack developer certification.',
                     pdf: '/Certificat_ETP4A_Abdoul Rahim.pdf'
                 },
@@ -457,7 +470,7 @@ export const translations = {
                 {
                     title: 'IBM Watson Orchestrate',
                     issuer: 'IBM',
-                    date: '2024',
+                    date: '2025',
                     description: 'Hackathon Agentic AI Challenge',
                     image: '/ibm-watson-certificate.png'
                 },
@@ -471,35 +484,35 @@ export const translations = {
                 {
                     title: 'Agentic AI Challenge',
                     issuer: 'IBM Watson Orchestrate',
-                    date: '2024',
+                    date: '2025',
                     description: 'IBM Hackathon - Agentic Artificial Intelligence.',
                     image: '/ibm-watson-certificate.png'
                 },
                 {
                     title: 'NASA Space Apps Challenge',
                     issuer: 'NASA',
-                    date: '2024',
+                    date: '2025',
                     description: 'Participation in the international NASA Space Apps challenge.',
                     pdf: '/NASA Space Apps Challenge Ouedraogo Passing Abdoul Rahim.pdf'
                 },
                 {
                     title: 'Deep Learning with PyTorch',
                     issuer: 'Coursera',
-                    date: '2023',
+                    date: '2025',
                     description: 'Specialized certification in Deep Learning.',
                     pdf: '/Coursera Deep learning with PyTorch.pdf'
                 },
                 {
                     title: 'Certificate of Completion',
                     issuer: 'Coursera',
-                    date: '2023',
+                    date: '2025',
                     description: 'Complete training path.',
                     pdf: '/Coursera Ouedraogo Passing Abdoul Rahim.pdf'
                 },
                 {
                     title: 'MBH Certificate',
                     issuer: 'MBH',
-                    date: '2023',
+                    date: '2025',
                     description: 'MBH training and certification.',
                     pdf: '/certificat_mbh_OUEDRAOGO Passing Abdoul Rahim.pdf'
                 }
@@ -584,6 +597,20 @@ export const translations = {
         footer: {
             made_with: 'Made with',
             rights: 'All rights reserved.',
+        },
+
+        resume: {
+            title: 'Resume',
+            subtitle: 'My professional journey.',
+            download: 'Download PDF',
+            sections: {
+                summary: 'Summary',
+                experience: 'Experience',
+                education: 'Education',
+                skills: 'Skills',
+                projects: 'Projects',
+                certificates: 'Certificates'
+            }
         }
     }
 };
