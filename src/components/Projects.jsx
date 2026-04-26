@@ -45,19 +45,39 @@ const Projects = () => {
                             style={{ overflow: 'hidden', display: 'flex', flexDirection: 'column' }}
                         >
                             <div style={{
-                                height: '180px',
-                                background: `linear-gradient(45deg, ${colors[index % colors.length]}, #2d3436)`,
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                color: 'rgba(255,255,255,0.8)',
-                                fontSize: '2rem',
-                                fontWeight: 'bold',
-                                padding: '1rem',
-                                textAlign: 'center',
-                                textShadow: '0 2px 4px rgba(0,0,0,0.3)'
+                                height: '200px',
+                                overflow: 'hidden',
+                                position: 'relative'
                             }}>
-                                {project.title.substring(0, 1)}
+                                {project.image ? (
+                                    <img 
+                                        src={project.image} 
+                                        alt={project.title}
+                                        style={{
+                                            width: '100%',
+                                            height: '100%',
+                                            objectFit: 'cover',
+                                            transition: 'transform 0.5s ease'
+                                        }}
+                                        className="project-image"
+                                    />
+                                ) : (
+                                    <div style={{
+                                        height: '100%',
+                                        background: `linear-gradient(45deg, ${colors[index % colors.length]}, #2d3436)`,
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        color: 'rgba(255,255,255,0.8)',
+                                        fontSize: '2rem',
+                                        fontWeight: 'bold',
+                                        padding: '1rem',
+                                        textAlign: 'center',
+                                        textShadow: '0 2px 4px rgba(0,0,0,0.3)'
+                                    }}>
+                                        {project.title.substring(0, 1)}
+                                    </div>
+                                )}
                             </div>
 
                             <div style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column' }}>

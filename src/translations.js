@@ -56,6 +56,22 @@ export const translations = {
             code: 'Code',
             items: [
                 {
+                    title: 'Vackess Cash',
+                    description: "Plateforme de gestion financière de pointe incluant un système de paiement sécurisé et un moteur de notifications WhatsApp automatisées.",
+                    tags: ['Laravel', 'PHP', 'WhatsApp API', 'Fintech'],
+                    image: '/projects/vackess_cash.png',
+                    link: 'https://vackesscash.site/',
+                    github: 'https://github.com/Passing01'
+                },
+                {
+                    title: 'Event Q&A',
+                    description: "Système de gestion d'événements innovant avec modération IA, projection multiscreen partagée et synthèse vocale haute fidélité.",
+                    tags: ['AI Moderator', 'WebSockets', 'Voice Synthesis', 'Laravel'],
+                    image: '/projects/event_qa.png',
+                    link: 'https://event.kgslab.com/',
+                    github: 'https://github.com/Passing01'
+                },
+                {
                     title: 'Kenaya Impact Cvthèque',
                     description: "Cvthèque pour l'ONG Kenaya Impact. Gestion complète des membres et recrutements.",
                     tags: ['Laravel', 'PHP', 'Vite'],
@@ -225,13 +241,15 @@ export const translations = {
                     period: "Depuis 2025",
                     description: "Conception et développement d'applications web robustes.",
                     achievements: [
-                        "Conception et développement d'applications web robustes en utilisant HTML, CSS, Javascript, PHP, Laravel.",
+                        "Conception et développement d'applications web robustes (HTML, CSS, JS, PHP, Laravel).",
+                        "Développement de la plateforme Fintech 'Vackess Cash' avec intégration de paiement et WhatsApp API.",
+                        "Mise en place de 'Event Q&A', une solution événementielle avec modération IA et synthèse vocale.",
                         "Utilisation des bases de données MySQL, SQLite, PostgreSQL.",
-                        "Création d'applications Back-Office pour des entreprises.",
-                        "Collaboration avec les équipes de design et de produit pour améliorer l'expérience utilisateur.",
-                        "Optimisation des performances et mise en œuvre de l'intégration continue.",
-                        "Développement et maintenance d'APIs RESTful pour la fluidité des données.",
-                        "Participation aux tests et débogage pour garantir la qualité."
+                        "Création d'applications Back-Office complexes pour des entreprises.",
+                        "Collaboration étroite avec les équipes design pour l'optimisation de l'UX.",
+                        "Optimisation des performances et mise en œuvre de pipelines CI/CD.",
+                        "Développement et maintenance d'APIs RESTful performantes.",
+                        "Garantie de la qualité via des tests rigoureux et débogage."
                     ]
                 },
                 {
@@ -353,6 +371,22 @@ export const translations = {
             demo: 'Visit',
             code: 'Code',
             items: [
+                {
+                    title: 'Vackess Cash',
+                    description: "Cutting-edge financial management platform featuring a secure payment system and an automated WhatsApp notification engine.",
+                    tags: ['Laravel', 'PHP', 'WhatsApp API', 'Fintech'],
+                    image: '/projects/vackess_cash.png',
+                    link: 'https://vackesscash.site/',
+                    github: 'https://github.com/Passing01'
+                },
+                {
+                    title: 'Event Q&A',
+                    description: "Innovative event management system with AI moderation, shared multiscreen projection, and high-fidelity voice synthesis.",
+                    tags: ['AI Moderator', 'WebSockets', 'Voice Synthesis', 'Laravel'],
+                    image: '/projects/event_qa.png',
+                    link: 'https://event.kgslab.com/',
+                    github: 'https://github.com/Passing01'
+                },
                 {
                     title: 'Kenaya Impact CV Database',
                     description: "CV Database for NGO Kenaya Impact. Complete member and recruitment management.",
@@ -537,13 +571,15 @@ export const translations = {
                     period: "Since 2025",
                     description: "Design and development of robust web applications.",
                     achievements: [
-                        "Design and development using HTML, CSS, Javascript, PHP, Laravel.",
-                        "Database management: MySQL, SQLite, PostgreSQL.",
-                        "Creation of Back-Office applications for companies.",
-                        "Collaboration with design/product teams for UX improvement.",
-                        "Performance optimization and CI/CD implementation.",
-                        "RESTful API development and maintenance.",
-                        "Testing and debugging to ensure quality."
+                        "Design and development of robust web applications (HTML, CSS, JS, PHP, Laravel).",
+                        "Developed 'Vackess Cash' Fintech platform with payment integration and WhatsApp API.",
+                        "Implemented 'Event Q&A', an event solution with AI moderation and voice synthesis.",
+                        "Advanced database management: MySQL, SQLite, PostgreSQL.",
+                        "Creation of complex Back-Office applications for corporate clients.",
+                        "Close collaboration with design/product teams for UX optimization.",
+                        "Performance optimization and CI/CD pipeline implementation.",
+                        "High-performance RESTful API development and maintenance.",
+                        "Ensuring quality through rigorous testing and debugging."
                     ]
                 },
                 {
