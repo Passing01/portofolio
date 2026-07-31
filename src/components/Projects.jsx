@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
     const { t, language } = useLanguage();
@@ -80,9 +81,15 @@ const Projects = () => {
 
                                 <div style={{ display: 'flex', gap: '1rem', marginTop: 'auto' }}>
                                     {project.link ? (
-                                        <a href={project.link} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem', color: 'var(--accent-primary)', textDecoration: 'none', fontWeight: 'bold' }}>
-                                            <FaExternalLinkAlt /> {t('projects.demo')}
-                                        </a>
+                                        project.link.startsWith('/') ? (
+                                            <Link to={project.link} style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem', color: 'var(--accent-primary)', textDecoration: 'none', fontWeight: 'bold' }}>
+                                                <FaExternalLinkAlt /> Étude de cas
+                                            </Link>
+                                        ) : (
+                                            <a href={project.link} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem', color: 'var(--accent-primary)', textDecoration: 'none', fontWeight: 'bold' }}>
+                                                <FaExternalLinkAlt /> {t('projects.demo')}
+                                            </a>
+                                        )
                                     ) : (
                                         <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontSize: '0.9rem', opacity: 0.5, cursor: 'not-allowed' }}>
                                             <FaExternalLinkAlt /> {t('projects.demo')}

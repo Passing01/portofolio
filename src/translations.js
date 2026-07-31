@@ -12,21 +12,21 @@ export const translations = {
         hero: {
             greeting: 'Bonjour, je suis',
             name: 'Passing Abdoul Rahim OUEDRAOGO',
-            title: 'Développeur Full Stack',
-            subtitle: 'Web & Mobile',
-            description: "Spécialisé en React, Laravel, Django, Ruby on Rails et vision par ordinateur. Je transforme des idées complexes en applications performantes.",
+            title: 'Full Stack Software & AI Engineer',
+            subtitle: 'Web, Mobile & IA Agentique',
+            description: "Spécialisé en développement Full Stack (React, Laravel, Django) et en Ingénierie IA. Je conçois des applications scalables et construis des agents intelligents autonomes basés sur des LLMs locaux.",
             cta_projects: 'Voir mes projets',
             cta_contact: 'Me contacter',
         },
         about: {
             title: 'À propos de moi',
-            p1: "Développeur Full Stack passionné, je jongle avec aisance entre le web (React, Laravel, Django, Rails) et le mobile (React Native, Flutter).",
-            p2: "Au-delà du développement classique, je possède une expertise en Computer Vision, me permettant d'intégrer des fonctionnalités d'analyse d'image et d'intelligence artificielle dans mes projets.",
+            p1: "Ingénieur logiciel passionné, je maîtrise le développement d'architectures robustes (React, Laravel, Django) et les applications mobiles hybrides.",
+            p2: "Au-delà du développement traditionnel, je suis expert en Intelligence Artificielle Agentique. Je conçois, entraîne et déploie des systèmes IA locaux (via Ollama), orchestre des pipelines de RAG, et développe des réseaux de consensus d'agents pour automatiser des tâches complexes.",
             p3: "Mon objectif : créer des solutions robustes, esthétiques et intelligentes.",
         },
         skills: {
             title: 'Compétences Techniques',
-            subtitle: "Expertise en développement Full Stack Web, Mobile et Vision par Ordinateur.",
+            subtitle: "Expertise en développement Full Stack, Architecture Logicielle et IA Agentique.",
             categories: [
                 {
                     name: "Langages de programmation",
@@ -47,6 +47,10 @@ export const translations = {
                 {
                     name: "Processus",
                     items: ["Méthodologie Agile", "Gestion de projet", "Revue de code", "Résolution de problèmes", "Rétrospectives"]
+                },
+                {
+                    name: "Intelligence Artificielle & Data",
+                    items: ["PyTorch", "TensorFlow", "Transformers", "Fine-tuning LoRA", "Ingénierie LLM", "IA agentique", "RAG", "Prompt Engineering", "Évaluation de l'IA", "Ollama"]
                 }
             ]
         },
@@ -55,6 +59,41 @@ export const translations = {
             demo: 'Visiter',
             code: 'Code',
             items: [
+                {
+                    title: 'MentalChecker',
+                    description: "Application open source de santé mentale. Auto-évaluation, orientation psychologique et analyse des réponses par IA.",
+                    tags: ['IA', 'Web', 'APIs', 'Open Source'],
+                    github: 'https://github.com/Passing01/MentalChecker'
+                },
+                {
+                    title: 'OpenSchool',
+                    description: 'Projet Open Source en cours de développement pour l\'éducation.',
+                    tags: ['Open Source', 'Education'],
+                    github: 'https://github.com/Passing01/OpenSchool'
+                },
+                {
+                    title: 'Système d\'Information Hospitalier (SIH)',
+                    description: 'Expert Openclinic travaillant sur le projet SIH du Ministère de la santé.',
+                    tags: ['Openclinic', 'Santé', 'SIH'],
+                },
+                {
+                    title: 'SYNOD CORE',
+                    description: 'Agent d\'IA conversationnelle basé sur des modèles locaux (Ollama). Conception d\'architecture, pipelines d\'inférence, fine-tuning et optimisation.',
+                    tags: ['IA Agentique', 'LLM', 'Ollama'],
+                    link: '/synod-case-study'
+                },
+                {
+                    title: 'SYNOD CODE',
+                    description: 'Assistant IA spécialisé dans la génération, l\'analyse, et l\'explication de code ainsi que la détection d\'erreurs.',
+                    tags: ['IA Agentique', 'Génération de Code', 'Code Analysis'],
+                    link: '/synod-case-study'
+                },
+                {
+                    title: 'SYNOD CYBER',
+                    description: 'Assistant IA orienté cybersécurité pour l\'analyse de vulnérabilités, l\'aide à l\'audit et l\'explication de concepts.',
+                    tags: ['IA Agentique', 'Cybersécurité', 'Audit'],
+                    link: '/synod-case-study'
+                },
                 {
                     title: 'Kenaya Impact Cvthèque',
                     description: "Cvthèque pour l'ONG Kenaya Impact. Gestion complète des membres et recrutements.",
@@ -158,12 +197,13 @@ export const translations = {
             hobbies_title: "Centres d'intérêt",
             exp_items: [
                 {
-                    role: "Développeur Web Full Stack",
+                    role: "Développeur Web/mobile Full Stack",
                     company: "YULCOM Technologie (Ouagadougou/Burkina Faso)",
                     period: "Depuis 2025",
-                    description: "Conception et développement d'applications web robustes.",
+                    description: "Conception et développement d'applications web et mobile robustes.",
                     achievements: [
-                        "Conception et développement d'applications web robustes en utilisant HTML, CSS, Javascript, PHP, Laravel.",
+                        "Conception et développement d'applications web robustes en utilisant HTML, CSS, Javascript, PHP, Laravel, Java.",
+                        "Conception et développement d'applications mobile robustes en utilisant Flutter, React Native.",
                         "Utilisation des bases de données MySQL, SQLite, PostgreSQL.",
                         "Création d'applications Back-Office pour des entreprises.",
                         "Collaboration avec les équipes de design et de produit pour améliorer l'expérience utilisateur.",
@@ -233,21 +273,21 @@ export const translations = {
         hero: {
             greeting: 'Hi, I am',
             name: 'Passing Abdoul Rahim OUEDRAOGO',
-            title: 'Full Stack Developer',
-            subtitle: 'Web & Mobile',
-            description: "Specialized in React, Laravel, Django, Ruby on Rails, and Computer Vision. I transform complex ideas into high-performance applications.",
+            title: 'Full Stack Software & AI Engineer',
+            subtitle: 'Web, Mobile & Agentic AI',
+            description: "Specialized in Full Stack development (React, Laravel, Django) and AI Engineering. I design scalable applications and build autonomous intelligent agents based on local LLMs.",
             cta_projects: 'View My Projects',
             cta_contact: 'Contact Me',
         },
         about: {
             title: 'About Me',
-            p1: "Passionate Full Stack Developer, I seamlessly navigate between web (React, Laravel, Django, Rails) and mobile (React Native, Flutter).",
-            p2: "Beyond classic development, I have expertise in Computer Vision, allowing me to integrate image analysis and artificial intelligence features into my projects.",
+            p1: "Passionate Software Engineer, I master the development of robust architectures (React, Laravel, Django) and hybrid mobile applications.",
+            p2: "Beyond traditional development, I am an expert in Agentic Artificial Intelligence. I design, train, and deploy local AI systems (via Ollama), orchestrate RAG pipelines, and build agent consensus networks to automate complex tasks.",
             p3: "My goal: to create robust, aesthetic, and intelligent solutions.",
         },
         skills: {
             title: 'Technical Skills',
-            subtitle: "Expertise in Full Stack Web, Mobile development, and Computer Vision.",
+            subtitle: "Expertise in Full Stack development, Software Architecture, and Agentic AI.",
             categories: [
                 {
                     name: "Programming Languages",
@@ -268,6 +308,10 @@ export const translations = {
                 {
                     name: "Processes",
                     items: ["Agile Methodology", "Project Management", "Code Review", "Problem Solving", "Retrospectives"]
+                },
+                {
+                    name: "Artificial Intelligence & Data",
+                    items: ["PyTorch", "TensorFlow", "Transformers", "LoRA Fine-tuning", "LLM Engineering", "Agentic AI", "RAG", "Prompt Engineering", "AI Evaluation", "Ollama"]
                 }
             ]
         },
@@ -276,6 +320,41 @@ export const translations = {
             demo: 'Visit',
             code: 'Code',
             items: [
+                {
+                    title: 'MentalChecker',
+                    description: "Open source mental health application. Self-assessment, psychological orientation, and AI response analysis.",
+                    tags: ['AI', 'Web', 'APIs', 'Open Source'],
+                    github: 'https://github.com/Passing01/MentalChecker'
+                },
+                {
+                    title: 'OpenSchool',
+                    description: 'Open source project in development for the education sector.',
+                    tags: ['Open Source', 'Education'],
+                    github: 'https://github.com/Passing01/OpenSchool'
+                },
+                {
+                    title: 'Hospital Information System (SIH)',
+                    description: 'Openclinic Expert working on the Ministry of Health\'s SIH project.',
+                    tags: ['Openclinic', 'Health', 'SIH'],
+                },
+                {
+                    title: 'SYNOD CORE',
+                    description: 'Conversational AI agent based on local models (Ollama). Architecture design, inference pipelines, fine-tuning, and optimization.',
+                    tags: ['Agentic AI', 'LLM', 'Ollama'],
+                    link: '/synod-case-study'
+                },
+                {
+                    title: 'SYNOD CODE',
+                    description: 'AI assistant specialized in code generation, analysis, explanation, and bug detection.',
+                    tags: ['Agentic AI', 'Code Generation', 'Code Analysis'],
+                    link: '/synod-case-study'
+                },
+                {
+                    title: 'SYNOD CYBER',
+                    description: 'Cybersecurity-oriented AI assistant for vulnerability analysis, audit assistance, and concept explanation.',
+                    tags: ['Agentic AI', 'Cybersecurity', 'Audit'],
+                    link: '/synod-case-study'
+                },
                 {
                     title: 'Kenaya Impact CV Database',
                     description: "CV Database for NGO Kenaya Impact. Complete member and recruitment management.",

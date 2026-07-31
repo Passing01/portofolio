@@ -26,7 +26,7 @@ const ResumePage = () => {
                 <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '2rem' }}>
                     <motion.a
                         whileHover={{ scale: 1.05 }}
-                        href="/Passing-Abdoul-Rahim-OUEDRAOGO-CV.pdf"
+                        href={language === 'fr' ? "/CV_PASSING ABDOUL RAHIM _OUEDRAOGO FR.pdf" : "/Passing-Abdoul-Rahim-OUEDRAOGO-CV.pdf"}
                         target="_blank"
                         style={{
                             display: 'flex', alignItems: 'center', gap: '0.5rem',
@@ -152,7 +152,7 @@ const ResumePage = () => {
                                     <div>
                                         <strong style={{ display: 'block', marginBottom: '0.5rem', color: 'var(--text-primary)' }}>AI & DATA</strong>
                                         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                                            {['Computer Vision', 'OpenCV', 'Python'].map(s => (
+                                            {['PyTorch', 'Agentic AI', 'Ollama', 'RAG', 'LLMs', 'Computer Vision'].map(s => (
                                                 <span key={s} style={{ fontSize: '0.8rem', backgroundColor: 'var(--glass-border)', padding: '0.2rem 0.6rem', borderRadius: '4px' }}>{s}</span>
                                             ))}
                                         </div>

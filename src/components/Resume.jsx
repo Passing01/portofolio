@@ -4,7 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { FaFileDownload, FaEye } from 'react-icons/fa';
 
 const Resume = () => {
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
 
     return (
         <section id="resume" className="section-padding" style={{ backgroundColor: 'var(--bg-secondary)' }}>
@@ -65,7 +65,7 @@ const Resume = () => {
                     2. Remplacez le href ci-dessous par "/mon_cv.pdf" 
                 */}
                         <a
-                            href="Passing-Abdoul-Rahim-OUEDRAOGO-CV.pdf" // Remplacez par le lien réel de votre CV
+                            href={language === 'fr' ? "/CV_PASSING ABDOUL RAHIM _OUEDRAOGO FR.pdf" : "/Passing-Abdoul-Rahim-OUEDRAOGO-CV.pdf"} // Remplacez par le lien réel de votre CV
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{
