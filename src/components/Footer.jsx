@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
 
             <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-                {t('footer.made_with')} <FaHeart color="var(--accent-primary)" style={{ display: 'inline', verticalAlign: '-2px' }} />
+                {t('footer.made_with')} Passing Abdoul Rahim OUEDRAOGO
             </p>
 
             <p style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginTop: '1rem', opacity: 0.6 }}>
