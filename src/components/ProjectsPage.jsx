@@ -1,14 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaHome } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translations';
 import { Link } from 'react-router-dom';
 
-const Projects = () => {
+const ProjectsPage = () => {
     const { t, language } = useLanguage();
-
-    const projectsList = translations[language].projects.items.slice(0, 3);
+    const projectsList = translations[language].projects.items;
 
     const colors = [
         '#FF6B6B', '#4ECDC4', '#45B7D1',
@@ -17,21 +16,32 @@ const Projects = () => {
     ];
 
     return (
-        <section id="projects" className="section-padding">
-            <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-                <motion.h2
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    style={{
-                        fontSize: '2.5rem',
-                        fontWeight: '800',
-                        marginBottom: '3rem',
-                        textAlign: 'center'
-                    }}
+        <div style={{ paddingTop: '100px', paddingBottom: '5rem', minHeight: '100vh', backgroundColor: 'var(--bg-primary)' }}>
+            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 5%' }}>
+                
+                {/* Header Actions */}
+                <div style={{ display: 'flex', justifyContent: 'flex-start', marginBottom: '2rem' }}>
+                    <Link
+                        to="/"
+                        style={{
+                            display: 'flex', alignItems: 'center', gap: '0.5rem',
+                            color: 'var(--text-secondary)',
+                            fontWeight: '600'
+                        }}
+                    >
+                        <FaHome /> {t('nav.home')}
+                    </Link>
+                </div>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    style={{ textAlign: 'center', marginBottom: '4rem' }}
                 >
-                    {t('projects.title')}
-                </motion.h2>
+                    <h1 style={{ fontSize: '3rem', fontWeight: '800', marginBottom: '1rem' }}>
+                        {t('projects.title')}
+                    </h1>
+                </motion.div>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem' }}>
                     {projectsList.map((project, index) => (
@@ -39,46 +49,42 @@ const Projects = () => {
                             key={index}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.1, duration: 0.5 }}
-                            whileHover={{ y: -10 }}
+                            transition={{ delay: index * 0.05 }}
                             viewport={{ once: true }}
                             className="glass-panel"
                             style={{ overflow: 'hidden', display: 'flex', flexDirection: 'column' }}
                         >
                             <div style={{
-                                height: '200px',
-                                overflow: 'hidden',
-                                position: 'relative'
+                                height: '180px',
+                                position: 'relative',
+                                background: project.image ? '#2d3436' : `linear-gradient(45deg, ${colors[index % colors.length]}, #2d3436)`,
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                overflow: 'hidden'
                             }}>
                                 {project.image ? (
                                     <img 
                                         src={project.image} 
-                                        alt={project.title}
-                                        style={{
-                                            width: '100%',
-                                            height: '100%',
-                                            objectFit: 'cover',
-                                            transition: 'transform 0.5s ease'
+                                        alt={project.title} 
+                                        style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                                        onError={(e) => { 
+                                            e.target.style.display = 'none'; 
+                                            if (e.target.nextSibling) e.target.nextSibling.style.display = 'flex'; 
                                         }}
-                                        className="project-image"
                                     />
-                                ) : (
-                                    <div style={{
-                                        height: '100%',
-                                        background: `linear-gradient(45deg, ${colors[index % colors.length]}, #2d3436)`,
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                        color: 'rgba(255,255,255,0.8)',
-                                        fontSize: '2rem',
-                                        fontWeight: 'bold',
-                                        padding: '1rem',
-                                        textAlign: 'center',
-                                        textShadow: '0 2px 4px rgba(0,0,0,0.3)'
-                                    }}>
-                                        {project.title.substring(0, 1)}
-                                    </div>
-                                )}
+                                ) : null}
+                                
+                                <div style={{
+                                    display: project.image ? 'none' : 'flex',
+                                    color: 'rgba(255,255,255,0.8)',
+                                    fontSize: '2rem',
+                                    fontWeight: 'bold',
+                                    textAlign: 'center',
+                                    textShadow: '0 2px 4px rgba(0,0,0,0.3)'
+                                }}>
+                                    {project.title.substring(0, 1)}
+                                </div>
                             </div>
 
                             <div style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
@@ -127,24 +133,9 @@ const Projects = () => {
                         </motion.div>
                     ))}
                 </div>
-                
-                <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-                    <Link
-                        to="/projects"
-                        style={{
-                            padding: '0.8rem 2rem',
-                            border: '1px solid var(--accent-primary)',
-                            borderRadius: '50px',
-                            color: 'var(--accent-primary)',
-                            fontWeight: '600'
-                        }}
-                    >
-                        {t('projects.view_all')}
-                    </Link>
-                </div>
             </div>
-        </section>
+        </div>
     );
 };
 
-export default Projects;
+export default ProjectsPage;

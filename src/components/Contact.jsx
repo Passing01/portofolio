@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaEnvelope, FaMapMarkerAlt, FaPaperPlane, FaCheckCircle, FaExclamationCircle } from 'react-icons/fa';
 import { useLanguage } from '../context/LanguageContext';
-import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const { t } = useLanguage();
@@ -10,40 +9,38 @@ const Contact = () => {
     const [status, setStatus] = useState({ type: '', message: '' });
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const sendEmail = (e) => {
+    const sendEmail = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
         setStatus({ type: '', message: '' });
 
-        // Utilisation des variables d'environnement pour la sécurité
-        const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-        const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-        const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+        const formData = new FormData(form.current);
+        const payload = Object.fromEntries(formData.entries());
 
-        if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
-            setStatus({ type: 'error', message: 'Erreur de configuration EmailJS. Vérifiez votre fichier .env' });
-            setIsSubmitting(false);
-            return;
-        }
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(payload),
+            });
 
-        emailjs.sendForm(
-            SERVICE_ID,
-            TEMPLATE_ID,
-            form.current,
-            PUBLIC_KEY
-        )
-            .then((result) => {
+            if (response.ok) {
                 setStatus({ type: 'success', message: t('contact.form.success') });
                 form.current.reset();
-            }, (error) => {
+            } else {
+                const errorData = await response.json();
+                console.error('API Error:', errorData);
                 setStatus({ type: 'error', message: t('contact.form.error') });
-                console.error('EmailJS Error:', error);
-            })
-            .finally(() => {
-                setIsSubmitting(false);
-                // Effacer le message après 5 secondes
-                setTimeout(() => setStatus({ type: '', message: '' }), 5000);
-            });
+            }
+        } catch (error) {
+            console.error('Network Error:', error);
+            setStatus({ type: 'error', message: t('contact.form.error') });
+        } finally {
+            setIsSubmitting(false);
+            setTimeout(() => setStatus({ type: '', message: '' }), 5000);
+        }
     };
 
     return (

@@ -58,6 +58,7 @@ export const translations = {
             title: 'Projets Réalisés',
             demo: 'Visiter',
             code: 'Code',
+            view_all: 'Voir tous les projets',
             items: [
                 {
                     title: 'MentalChecker',
@@ -413,6 +414,7 @@ export const translations = {
             title: 'Completed Projects',
             demo: 'Visit',
             code: 'Code',
+            view_all: 'View All Projects',
             items: [
                 {
                     title: 'MentalChecker',
