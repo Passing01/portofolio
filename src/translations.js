@@ -92,7 +92,23 @@ export const translations = {
                     title: 'SYNOD CYBER',
                     description: 'Assistant IA orienté cybersécurité pour l\'analyse de vulnérabilités, l\'aide à l\'audit et l\'explication de concepts.',
                     tags: ['IA Agentique', 'Cybersécurité', 'Audit'],
-                    link: '/synod-case-study'
+                    link: '/synod-case-study',
+                    title: 'Vackess Cash',
+                },
+                {
+                    description: "Plateforme de gestion financière de pointe incluant un système de paiement sécurisé et un moteur de notifications WhatsApp automatisées.",
+                    tags: ['Laravel', 'PHP', 'WhatsApp API', 'Fintech'],
+                    image: '/projects/vackess_cash.png',
+                    link: 'https://vackesscash.site/',
+                    github: 'https://github.com/Passing01'
+                },
+                {
+                    title: 'Event Q&A',
+                    description: "Système de gestion d'événements innovant avec modération IA, projection multiscreen partagée et synthèse vocale haute fidélité.",
+                    tags: ['AI Moderator', 'WebSockets', 'Voice Synthesis', 'Laravel'],
+                    image: '/projects/event_qa.png',
+                    link: 'https://event.kgslab.com/',
+                    github: 'https://github.com/Passing01'
                 },
                 {
                     title: 'Kenaya Impact Cvthèque',
@@ -148,12 +164,74 @@ export const translations = {
             view_all: 'Voir tous les certificats',
             items: [
                 {
+                    title: 'Développeur Full Stack (Niveau Intermédiaire)',
+                    issuer: 'ETP4A',
+                    date: '2025',
+                    description: 'Certification de développeur Full Stack niveau intermédiaire.',
+                    pdf: '/Certificat_ETP4A_Abdoul Rahim.pdf'
+                },
+                {
+                    title: 'Développement Mobile (Niveau Débutant)',
+                    issuer: 'Declic',
+                    date: 'Octobre 2025',
+                    description: 'Certificat de formation en développement mobile.',
+                    image: '/_Badge_Développement_Mobile_(Niveau_débutant_-_Octobre_2025).png'
+                },
+                {
+                    title: 'Développeur Django',
+                    issuer: 'Bakeli Network',
+                    date: '2025',
+                    description: 'Certification de développeur backend avec le framework Django.',
+                    pdf: '/certificat.pdf'
+                },
+                {
+                    title: 'Sécurité des Réseaux',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: 'Sécurisation des infrastructures réseaux.',
+                    pdf: '/Coursera Securite Reseaux Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: 'Risques de Sécurité',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: 'Analyse et gestion des risques informatiques.',
+                    pdf: '/Coursera Risques de securite Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: 'Fondements de la Cybersécurité',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: 'Concepts de base et enjeux de la cybersécurité.',
+                    pdf: '/Coursera Fondement Cybersecurite Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: 'Introduction au Développement Mobile',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: 'Principes fondamentaux du développement mobile.',
+                    pdf: '/Coursera Introduction au Dev Mobile Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: 'Introduction au Développement de Jeux Vidéo',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: "Bases de la création de jeux vidéo.",
+                    pdf: '/Coursera Introduction au Jeux Video Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: "Semaine de l'Intelligence Artificielle (SEINAR)",
+                    issuer: 'SEINAR',
+                    date: '2025',
+                    description: "Certificat de participation à la semaine de l'IA.",
+                    pdf: '/Rahim Ouedraogo_Certificat.pdf'
+                },
+                {
                     title: 'Agentic AI Challenge',
                     issuer: 'IBM Watson Orchestrate',
                     date: '2024',
                     description: 'Hackathon IBM - Intelligence Artificielle Agentique.',
-                    image: '/ibm-watson-certificate.png',
-                    pdf: '/Rahim Ouedraogo_Certificat.pdf'
+                    image: '/ibm-watson-certificate.png'
                 },
                 {
                     title: 'NASA Space Apps Challenge',
@@ -202,14 +280,15 @@ export const translations = {
                     period: "Depuis 2025",
                     description: "Conception et développement d'applications web et mobile robustes.",
                     achievements: [
-                        "Conception et développement d'applications web robustes en utilisant HTML, CSS, Javascript, PHP, Laravel, Java.",
-                        "Conception et développement d'applications mobile robustes en utilisant Flutter, React Native.",
+                        "Conception et développement d'applications web robustes (HTML, CSS, JS, PHP, Laravel).",
+                        "Développement de la plateforme Fintech 'Vackess Cash' avec intégration de paiement et WhatsApp API.",
+                        "Mise en place de 'Event Q&A', une solution événementielle avec modération IA et synthèse vocale.",
                         "Utilisation des bases de données MySQL, SQLite, PostgreSQL.",
-                        "Création d'applications Back-Office pour des entreprises.",
-                        "Collaboration avec les équipes de design et de produit pour améliorer l'expérience utilisateur.",
-                        "Optimisation des performances et mise en œuvre de l'intégration continue.",
-                        "Développement et maintenance d'APIs RESTful pour la fluidité des données.",
-                        "Participation aux tests et débogage pour garantir la qualité."
+                        "Création d'applications Back-Office complexes pour des entreprises.",
+                        "Collaboration étroite avec les équipes design pour l'optimisation de l'UX.",
+                        "Optimisation des performances et mise en œuvre de pipelines CI/CD.",
+                        "Développement et maintenance d'APIs RESTful performantes.",
+                        "Garantie de la qualité via des tests rigoureux et débogage."
                     ]
                 },
                 {
@@ -253,11 +332,26 @@ export const translations = {
                 message: 'Message',
                 message_placeholder: 'Votre message',
                 send: 'Envoyer',
+                success: 'Message envoyé avec succès !',
+                error: 'Une erreur est survenue, veuillez réessayer.',
             }
         },
         footer: {
             made_with: 'Fait avec',
             rights: 'Tous droits réservés.',
+        },
+        resume: {
+            title: 'Mon CV',
+            subtitle: 'Mon parcours professionnel.',
+            download: 'Télécharger PDF',
+            sections: {
+                summary: 'Résumé',
+                experience: 'Expérience',
+                education: 'Education',
+                skills: 'Compétences',
+                projects: 'Projets',
+                certificates: 'Certificats'
+            }
         }
     },
     en: {
@@ -356,6 +450,22 @@ export const translations = {
                     link: '/synod-case-study'
                 },
                 {
+                    title: 'Vackess Cash',
+                    description: "Cutting-edge financial management platform featuring a secure payment system and an automated WhatsApp notification engine.",
+                    tags: ['Laravel', 'PHP', 'WhatsApp API', 'Fintech'],
+                    image: '/projects/vackess_cash.png',
+                    link: 'https://vackesscash.site/',
+                    github: 'https://github.com/Passing01'
+                },
+                {
+                    title: 'Event Q&A',
+                    description: "Innovative event management system with AI moderation, shared multiscreen projection, and high-fidelity voice synthesis.",
+                    tags: ['AI Moderator', 'WebSockets', 'Voice Synthesis', 'Laravel'],
+                    image: '/projects/event_qa.png',
+                    link: 'https://event.kgslab.com/',
+                    github: 'https://github.com/Passing01'
+                },
+                {
                     title: 'Kenaya Impact CV Database',
                     description: "CV Database for NGO Kenaya Impact. Complete member and recruitment management.",
                     tags: ['Laravel', 'PHP', 'Vite'],
@@ -409,15 +519,78 @@ export const translations = {
             view_all: 'View All Certificates',
             items: [
                 {
+                    title: 'Full Stack Developer (Intermediate Level)',
+                    issuer: 'ETP4A',
+                    date: '2024',
+                    description: 'Intermediate level Full Stack developer certification.',
+                    pdf: '/Certificat_ETP4A_Abdoul Rahim.pdf'
+                },
+                {
+                    title: 'Mobile Development (Beginner Level)',
+                    issuer: 'Declic',
+                    date: 'October 2025',
+                    description: 'Mobile development training certificate.',
+                    image: '/_Badge_Développement_Mobile_(Niveau_débutant_-_Octobre_2025).png'
+                },
+                {
+                    title: 'Django Developer',
+                    issuer: 'Bakeli Network',
+                    date: '2025',
+                    description: 'Backend developer certification with Django framework.',
+                    pdf: '/certificat.pdf'
+                },
+                {
+                    title: 'Network Security',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: 'Securing network infrastructures.',
+                    pdf: '/Coursera Securite Reseaux Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: 'Security Risks',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: 'Analysis and management of IT risks.',
+                    pdf: '/Coursera Risques de securite Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: 'Cybersecurity Foundations',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: 'Basic concepts and challenges of cybersecurity.',
+                    pdf: '/Coursera Fondement Cybersecurite Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: 'Introduction to Mobile Development',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: 'Fundamental principles of mobile development.',
+                    pdf: '/Coursera Introduction au Dev Mobile Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: 'Introduction to Video Game Development',
+                    issuer: 'Coursera',
+                    date: '2025',
+                    description: "Basics of video game creation.",
+                    pdf: '/Coursera Introduction au Jeux Video Rahim Ouedraogo.pdf'
+                },
+                {
+                    title: "Artificial Intelligence Week (SEINAR)",
+                    issuer: 'SEINAR',
+                    date: '2025',
+                    description: "Participation certificate for the AI week.",
+                    pdf: '/Rahim Ouedraogo_Certificat.pdf'
+                },
+                {
                     title: 'IBM Watson Orchestrate',
                     issuer: 'IBM',
-                    date: '2024',
+                    date: '2025',
                     description: 'Hackathon Agentic AI Challenge',
                     image: '/ibm-watson-certificate.png'
                 },
                 {
                     title: 'Full Stack Development',
-                    issuer: 'ETP4A', // Placeholder
+                    issuer: 'ETP4A',
                     date: '2023',
                     description: 'Professional Certificate',
                     image: '/meta_certificate.jpg'
@@ -425,36 +598,35 @@ export const translations = {
                 {
                     title: 'Agentic AI Challenge',
                     issuer: 'IBM Watson Orchestrate',
-                    date: '2024',
+                    date: '2025',
                     description: 'IBM Hackathon - Agentic Artificial Intelligence.',
-                    image: '/ibm-watson-certificate.png',
-                    pdf: '/Rahim Ouedraogo_Certificat.pdf'
+                    image: '/ibm-watson-certificate.png'
                 },
                 {
                     title: 'NASA Space Apps Challenge',
                     issuer: 'NASA',
-                    date: '2024',
+                    date: '2025',
                     description: 'Participation in the international NASA Space Apps challenge.',
                     pdf: '/NASA Space Apps Challenge Ouedraogo Passing Abdoul Rahim.pdf'
                 },
                 {
                     title: 'Deep Learning with PyTorch',
                     issuer: 'Coursera',
-                    date: '2023',
+                    date: '2025',
                     description: 'Specialized certification in Deep Learning.',
                     pdf: '/Coursera Deep learning with PyTorch.pdf'
                 },
                 {
                     title: 'Certificate of Completion',
                     issuer: 'Coursera',
-                    date: '2023',
+                    date: '2025',
                     description: 'Complete training path.',
                     pdf: '/Coursera Ouedraogo Passing Abdoul Rahim.pdf'
                 },
                 {
                     title: 'MBH Certificate',
                     issuer: 'MBH',
-                    date: '2023',
+                    date: '2025',
                     description: 'MBH training and certification.',
                     pdf: '/certificat_mbh_OUEDRAOGO Passing Abdoul Rahim.pdf'
                 }
@@ -477,13 +649,15 @@ export const translations = {
                     period: "Since 2025",
                     description: "Design and development of robust web applications.",
                     achievements: [
-                        "Design and development using HTML, CSS, Javascript, PHP, Laravel.",
-                        "Database management: MySQL, SQLite, PostgreSQL.",
-                        "Creation of Back-Office applications for companies.",
-                        "Collaboration with design/product teams for UX improvement.",
-                        "Performance optimization and CI/CD implementation.",
-                        "RESTful API development and maintenance.",
-                        "Testing and debugging to ensure quality."
+                        "Design and development of robust web applications (HTML, CSS, JS, PHP, Laravel).",
+                        "Developed 'Vackess Cash' Fintech platform with payment integration and WhatsApp API.",
+                        "Implemented 'Event Q&A', an event solution with AI moderation and voice synthesis.",
+                        "Advanced database management: MySQL, SQLite, PostgreSQL.",
+                        "Creation of complex Back-Office applications for corporate clients.",
+                        "Close collaboration with design/product teams for UX optimization.",
+                        "Performance optimization and CI/CD pipeline implementation.",
+                        "High-performance RESTful API development and maintenance.",
+                        "Ensuring quality through rigorous testing and debugging."
                     ]
                 },
                 {
@@ -534,11 +708,27 @@ export const translations = {
                 message: 'Message',
                 message_placeholder: 'Your message',
                 send: 'Send',
+                success: 'Message sent successfully!',
+                error: 'An error occurred, please try again.',
             }
         },
         footer: {
             made_with: 'Made with',
             rights: 'All rights reserved.',
+        },
+
+        resume: {
+            title: 'Resume',
+            subtitle: 'My professional journey.',
+            download: 'Download PDF',
+            sections: {
+                summary: 'Summary',
+                experience: 'Experience',
+                education: 'Education',
+                skills: 'Skills',
+                projects: 'Projects',
+                certificates: 'Certificates'
+            }
         }
     }
 };
