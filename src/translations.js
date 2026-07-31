@@ -93,10 +93,10 @@ export const translations = {
                     title: 'SYNOD CYBER',
                     description: 'Assistant IA orienté cybersécurité pour l\'analyse de vulnérabilités, l\'aide à l\'audit et l\'explication de concepts.',
                     tags: ['IA Agentique', 'Cybersécurité', 'Audit'],
-                    link: '/synod-case-study',
-                    title: 'Vackess Cash',
+                    link: '/synod-case-study'
                 },
                 {
+                    title: 'Vackess Cash',
                     description: "Plateforme de gestion financière de pointe incluant un système de paiement sécurisé et un moteur de notifications WhatsApp automatisées.",
                     tags: ['Laravel', 'PHP', 'WhatsApp API', 'Fintech'],
                     image: '/projects/vackess_cash.png',

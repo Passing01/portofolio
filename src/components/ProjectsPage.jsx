@@ -83,7 +83,7 @@ const ProjectsPage = () => {
                                     textAlign: 'center',
                                     textShadow: '0 2px 4px rgba(0,0,0,0.3)'
                                 }}>
-                                    {project.title.substring(0, 1)}
+                                    {(project.title || 'P').substring(0, 1)}
                                 </div>
                             </div>
 
